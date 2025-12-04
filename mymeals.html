@@ -47,53 +47,35 @@
             </nav>
         </header>
         <main id="main">
-            <h2>Daily Meal Generator</h2>
-            <section id="Breakfast">
-                <h3>Breakfast</h3>
-                <article>
-                    <h4>Meal Title</h4>
-                    <p>Meal Instructions</p>
-                    <a target="_blank">Details</a>
-                </article>
-                <button id="breakfastLock" class="lock" data-meal="Breakfast"><span>Lock Meal</span><svg></svg></button>
-                <button id="breakfastBookmark"><span>Bookmark Meal</span><svg></svg></button>
-                <img src="" alt="">
+            <h2>Saved Meals</h2>
+            <section>
+                <h3>Individual Meals</h3>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#breakfast">Breakfast</a></li>
+                        <li><a href="#lunch">Lunch</a></li>
+                        <li><a href="#dinner">Dinner</a></li>
+                        <li><a href="#dessert">Dessert</a></li>
+                    </ul>
+                    <section id="breakfast">
+                        <h4>Breakfast</h4>
+                    </section>
+                    <section id="lunch">
+                        <h4>Lunch</h4>
+                    </section>
+                    <section id="dinner">
+                        <h4>Dinner</h4>
+                    </section>
+                    <section id="dessert">
+                        <h4>Dessert</h4>
+                    </section>
+                </div>
             </section>
-            <section id="Lunch">
-                <h3>Lunch</h3>
-                <article>
-                    <h4>Meal Title</h4>
-                    <p>Meal Instructions</p>
-                    <a target="_blank">Details</a>
-                </article>
-                <button id="lunchLock" class="lock" data-meal="Lunch"><span>Lock Meal</span><svg></svg></button>
-                <button id="lunchBookmark"><span>Bookmark Meal</span><svg></svg></button>
-                <img>
+
+            <section>
+                <h3>Full Daily Meals</h3>
             </section>
-            <section id="Dinner">
-                <h3>Dinner</h3>
-                <article>
-                    <h4>Meal Title</h4>
-                    <p>Meal Instructions</p>
-                    <a target="_blank">Details</a>
-                </article>
-                <button id="dinnerLock" class="lock" data-meal="Dinner"><span>Lock Meal</span><svg></svg></button>
-                <button id="dinnerBookmark"><span>Bookmark Meal</span><svg></svg></button>
-                <img>
-            </section>
-            <section id="Dessert">
-                <h3>Dessert</h3>
-                <article>
-                    <h4>Meal Title</h4>
-                    <p>Meal Instructions</p>
-                    <a target="_blank">Details</a>
-                </article>
-                <button id="dessertLock" class="lock" data-meal="Dessert"><span>Lock Meal</span><svg></svg></button>
-                <button id="dessertBookmark"><span>Bookmark Meal</span><svg></svg></button>
-                <img>
-            </section>
-            <button id="generateMeal">Generate New Meal</button>
-            <button id="fullMealSave">Save Full Meal</button>
+
         </main>
         <footer>
             <p><small>Copyright &copy; 2025 - Stephen Carey</small></p>
