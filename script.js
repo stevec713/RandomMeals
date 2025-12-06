@@ -144,7 +144,7 @@ async function loadSavedMeals() {
     }
 
     for (let category in savedHTML) {
-        $(`#tabs #${category}`).append(savedHTML[category]);
+        $(`#fullMealsAccordion #${category}`).append(savedHTML[category]);
     }
 }
 
@@ -222,3 +222,12 @@ if($('#savedFullMeals').length){
     $(document).on('click', '.remove', removeSavedMeal);
     $(document).on('click', '.removeFullMeal', removeSavedFullMeal);
 }
+
+
+$(function() {
+    $("#fullMealsAccordion").accordion({
+        collapsible: true,
+        heightStyle: "content",
+        active: false
+    });
+});

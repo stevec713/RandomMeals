@@ -32,7 +32,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -46,28 +50,26 @@
                 </ul>
             </nav>
         </header>
-        <main id="main">
+        <main id="mainSaved">
             <h2>Saved Meals</h2>
             <section>
                 <h3>Individual Meals</h3>
-                <div id="tabs">
-                    <ul>
-                        <li><a href="#Breakfast">Breakfast</a></li>
-                        <li><a href="#Lunch">Lunch</a></li>
-                        <li><a href="#Dinner">Dinner</a></li>
-                        <li><a href="#Dessert">Dessert</a></li>
-                    </ul>
+                <div id="fullMealsAccordion">
+                    <h4>Breakfast</h4>
                     <section id="Breakfast">
-                        <h4>Breakfast</h4>
+                        
                     </section>
+
+                    <h4>Lunch</h4>
                     <section id="Lunch">
-                        <h4>Lunch</h4>
                     </section>
+
+                    <h4>Dinner</h4>
                     <section id="Dinner">
-                        <h4>Dinner</h4>
                     </section>
+
+                    <h4>Dessert</h4>
                     <section id="Dessert">
-                        <h4>Dessert</h4>
                     </section>
                 </div>
             </section>
