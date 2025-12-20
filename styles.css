@@ -155,7 +155,7 @@ h2 {
 }
 
 #mainIndex img {
-   position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -177,7 +177,6 @@ svg {
 
 #mainIndex article a {
     font-size: 1.3rem;
-    color: blue;
     text-decoration: underline;
     padding: 5px;
     color: rgb(164, 136, 235);
@@ -204,4 +203,58 @@ svg {
 #mainSaved img {
     width: 100%;
     height: auto;
+}
+
+#fullMealsAccordion article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#fullMealsAccordion img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+#fullMealsAccordion h4, #fullMealsAccordion a, #fullMealsAccordion button {
+    z-index: 1;
+}
+
+#fullMealsAccordion section h4 {
+    grid-column: 1 / -1;
+    color: rgb(244, 244, 244);
+    font-size: 1.4rem;
+    background: linear-gradient(black, rgba(0,0,0,0));
+    padding: 10px;
+}
+
+#fullMealsAccordion a, #fullMealsAccordion button {
+    grid-row: 3 / 4;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+#fullMealsAccordion button {
+    width: fit-content;
+    height: fit-content;
+    justify-self: end;
+    align-self: end;
+    color: white;
+}
+
+#fullMealsAccordion a {
+    align-self: end;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: rgb(164, 136, 235);
 }
