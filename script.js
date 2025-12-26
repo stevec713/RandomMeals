@@ -162,9 +162,11 @@ async function loadSavedFullMeals() {
                 const meal = mealData.meals[0];
                 savedFullMealsHTML += `
                             <article class="saved-meal" data-id="${meal.idMeal}" data-category="${category}">
-                                <h4>${meal.strMeal}</h4>
                                 <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+                                <div>
+                                <h4>${meal.strMeal}</h4>
                                 <a href="${meal.strSource ? meal.strSource : `https://www.themealdb.com/meal/${meal.idMeal}`}">Details</a>
+                                </div>
                             </article>
                     `;
             }
