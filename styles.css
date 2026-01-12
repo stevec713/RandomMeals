@@ -288,6 +288,10 @@ svg {
     color: rgb(164, 136, 235);
 }
 
+#mainSaved .remove {
+    border: none;
+}
+
 
 
 
@@ -355,8 +359,44 @@ footer p {
     text-align: center;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
 
+header a:hover {
+    background-color: white;
+}
 
+#mainIndex a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+button:hover svg {
+    fill: black;
+    stroke: black;
+}
+
+#fullMealsAccordion a:hover {
+    background-color: white;
+    color: black;
+}
+
+#mainSaved .remove:hover {
+    background-color: white;
+    color: black;
+}
+
+#skip:focus {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
 
 @media (min-width: 1000px) {
     #mainIndex {
@@ -383,5 +423,20 @@ footer p {
         grid-column: 3 / -1;
         width: 75%;
         justify-self: center;
+    }
+
+
+    #mainSaved > section:first-of-type {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #fullMealsAccordion section {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    #savedFullMeals section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
