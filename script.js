@@ -253,9 +253,11 @@ if($('#savedFullMeals').length){
 
 
 $(function() {
-    $("#fullMealsAccordion").accordion({
-        collapsible: true,
-        heightStyle: "content",
-        active: false
-    });
+    if ($("#fullMealsAccordion").length) {
+        $("#fullMealsAccordion").accordion({
+            collapsible: true,
+            heightStyle: "content",
+            active: false
+        });
+    }
 });
